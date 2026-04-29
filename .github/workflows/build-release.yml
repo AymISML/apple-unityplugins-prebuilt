@@ -48,11 +48,7 @@ jobs:
             --platforms all \
             --build-config Release \
             --build-action all \
-            --skip-codesign \
             --output-path ../Build
-        # The --skip-codesign flag avoids the interactive prompt.
-        # If a future version of build.py renames the flag, check:
-        #   python3 build.py --help
 
       - name: List build output
         run: ls -lh Build/ || echo "Build directory not found - check build step logs."
