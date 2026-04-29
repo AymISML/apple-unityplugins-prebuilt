@@ -41,7 +41,7 @@ jobs:
 
       # ── 2. Build ──────────────────────────────────────────────────────────────
       - name: Create Build output directory
-        run: mkdir -p Build
+        run: mkdir -p upstream/Build
 
       - name: Create no-codesign xcconfig
         run: |
@@ -65,9 +65,8 @@ jobs:
             --output-path Build \
             -k all -f
 
-
       - name: List build output
-        run: ls -lh Build/ || echo "Build directory not found - check build step logs."
+        run: ls -lh upstream/Build/ || echo "Build directory not found - check build step logs."
 
       # ── 3. Verify tarballs ────────────────────────────────────────────────────
       - name: Verify expected tarballs exist
@@ -82,11 +81,11 @@ jobs:
           )
           MISSING=()
           for pkg in "${EXPECTED[@]}"; do
-            COUNT=$(ls Build/${pkg}-*.tgz 2>/dev/null | wc -l)
+            COUNT=$(ls upstream/Build/${pkg}-*.tgz 2>/dev/null | wc -l)
             if [ "$COUNT" -eq 0 ]; then
               MISSING+=("$pkg")
             else
-              echo "✅  Found: $(ls Build/${pkg}-*.tgz)"
+              echo "✅  Found: $(ls upstream/Build/${pkg}-*.tgz)"
             fi
           done
           if [ ${#MISSING[@]} -gt 0 ]; then
@@ -120,7 +119,7 @@ jobs:
 
             ## Upstream Source
             Built from [apple/unityplugins](https://github.com/apple/unityplugins) at tag `${{ inputs.upstream_tag }}`.
-          files: Build/*.tgz
+          files: upstream/Build/*.tgz
           generate_release_notes: false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -145,7 +144,7 @@ jobs:
           )
 
           for PKG in "${PLUGINS[@]}"; do
-            TGZ=$(ls Build/${PKG}-*.tgz 2>/dev/null | head -n 1)
+            TGZ=$(ls upstream/Build/${PKG}-*.tgz 2>/dev/null | head -n 1)
             if [ -z "$TGZ" ]; then
               echo "⚠️  Skipping $PKG – tarball not found."
               continue
