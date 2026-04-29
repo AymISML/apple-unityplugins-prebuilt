@@ -20,9 +20,9 @@ jobs:
       - name: Get latest upstream tag
         id: upstream
         run: |
-          LATEST=$(curl -s "https://api.github.com/repos/apple/unityplugins/releases/latest" \
+          LATEST=$(curl -s "https://api.github.com/repos/apple/unityplugins/tags" \
             -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
-            | jq -r '.tag_name')
+            | jq -r '.[0].name')
           echo "upstream_tag=$LATEST" >> "$GITHUB_OUTPUT"
           echo "Latest upstream tag: $LATEST"
 
