@@ -1,0 +1,187 @@
+name: Build and Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      upstream_tag:
+        description: "Upstream apple/unityplugins tag to build (e.g. v2.0.0)"
+        required: true
+        type: string
+
+jobs:
+  build:
+    name: Build Apple Unity Plugins
+    runs-on: macos-latest
+
+    steps:
+      # ── 1. Setup ──────────────────────────────────────────────────────────────
+      - name: Checkout this repo
+        uses: actions/checkout@v4
+
+      - name: Clone apple/unityplugins at target tag
+        run: |
+          git clone --depth 1 --branch "${{ inputs.upstream_tag }}" \
+            https://github.com/apple/unityplugins.git upstream
+          echo "Cloned at tag: ${{ inputs.upstream_tag }}"
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Install Node / npm
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Select latest stable Xcode
+        uses: maxim-lobanov/setup-xcode@v1
+        with:
+          xcode-version: latest-stable
+
+      # ── 2. Build ──────────────────────────────────────────────────────────────
+      - name: Build all plugins (Release, no codesign, no tests)
+        working-directory: upstream
+        run: |
+          python3 build.py \
+            --plugin-list all \
+            --platforms all \
+            --build-config release \
+            --action build pack \
+            --skip-codesign \
+            --output ../Build
+        # The --skip-codesign flag avoids the interactive prompt.
+        # If a future version of build.py renames the flag, check:
+        #   python3 build.py --help
+
+      - name: List build output
+        run: ls -lh Build/ || echo "Build directory not found - check build step logs."
+
+      # ── 3. Verify tarballs ────────────────────────────────────────────────────
+      - name: Verify expected tarballs exist
+        run: |
+          EXPECTED=(
+            "Apple.Core"
+            "Apple.Accessibility"
+            "Apple.CoreHaptics"
+            "Apple.GameController"
+            "Apple.GameKit"
+            "Apple.PHASE"
+          )
+          MISSING=()
+          for pkg in "${EXPECTED[@]}"; do
+            COUNT=$(ls Build/${pkg}-*.tgz 2>/dev/null | wc -l)
+            if [ "$COUNT" -eq 0 ]; then
+              MISSING+=("$pkg")
+            else
+              echo "✅  Found: $(ls Build/${pkg}-*.tgz)"
+            fi
+          done
+          if [ ${#MISSING[@]} -gt 0 ]; then
+            echo "❌  Missing packages: ${MISSING[*]}"
+            exit 1
+          fi
+
+      # ── 4. GitHub Release ─────────────────────────────────────────────────────
+      - name: Create GitHub Release and upload tarballs
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ inputs.upstream_tag }}
+          name: "Apple Unity Plugins ${{ inputs.upstream_tag }}"
+          body: |
+            Pre-built packages for [apple/unityplugins ${{ inputs.upstream_tag }}](https://github.com/apple/unityplugins/releases/tag/${{ inputs.upstream_tag }}).
+
+            ## Download
+            Download individual `.tgz` packages from the Assets section below and install them
+            via **Unity Package Manager → Add package from tarball**.
+
+            ## UPM Git Install (no download needed)
+            You can install each plugin directly via git URL using the dedicated branches:
+            ```
+            https://github.com/${{ github.repository }}.git#upm/Apple.Core
+            https://github.com/${{ github.repository }}.git#upm/Apple.Accessibility
+            https://github.com/${{ github.repository }}.git#upm/Apple.CoreHaptics
+            https://github.com/${{ github.repository }}.git#upm/Apple.GameController
+            https://github.com/${{ github.repository }}.git#upm/Apple.GameKit
+            https://github.com/${{ github.repository }}.git#upm/Apple.PHASE
+            ```
+
+            ## Upstream Source
+            Built from [apple/unityplugins](https://github.com/apple/unityplugins) at tag `${{ inputs.upstream_tag }}`.
+          files: Build/*.tgz
+          generate_release_notes: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # ── 5. UPM branches ───────────────────────────────────────────────────────
+      - name: Configure git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Push UPM branches for each plugin
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          PLUGINS=(
+            "Apple.Core"
+            "Apple.Accessibility"
+            "Apple.CoreHaptics"
+            "Apple.GameController"
+            "Apple.GameKit"
+            "Apple.PHASE"
+          )
+
+          for PKG in "${PLUGINS[@]}"; do
+            TGZ=$(ls Build/${PKG}-*.tgz 2>/dev/null | head -n 1)
+            if [ -z "$TGZ" ]; then
+              echo "⚠️  Skipping $PKG – tarball not found."
+              continue
+            fi
+
+            BRANCH="upm/${PKG}"
+            WORK_DIR="upm_work_${PKG}"
+
+            echo "──── Processing $PKG ────"
+            echo "Tarball: $TGZ"
+
+            # Extract tarball (npm pack produces a 'package/' subdirectory)
+            mkdir -p "$WORK_DIR"
+            tar -xzf "$TGZ" -C "$WORK_DIR"
+            PKG_DIR=$(find "$WORK_DIR" -maxdepth 1 -mindepth 1 -type d | head -n 1)
+
+            if [ -z "$PKG_DIR" ]; then
+              echo "❌  Could not find extracted package directory for $PKG"
+              continue
+            fi
+
+            # Check out (or create) the UPM branch in a separate worktree
+            WORKTREE="worktree_${PKG}"
+            git fetch origin "$BRANCH" 2>/dev/null || true
+
+            if git ls-remote --exit-code --heads origin "$BRANCH" > /dev/null 2>&1; then
+              git worktree add "$WORKTREE" "origin/$BRANCH"
+            else
+              # Create an orphan branch if it doesn't exist
+              git worktree add --orphan -b "$BRANCH" "$WORKTREE"
+            fi
+
+            # Remove existing content and replace with extracted package
+            rm -rf "${WORKTREE:?}"/*
+            cp -r "$PKG_DIR"/. "$WORKTREE/"
+
+            # Commit and push
+            cd "$WORKTREE"
+            git add -A
+            git commit -m "chore: update $PKG to ${{ inputs.upstream_tag }}" \
+              --allow-empty
+            git push "https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git" \
+              "HEAD:$BRANCH"
+            cd "${{ github.workspace }}"
+
+            # Cleanup worktree
+            git worktree remove --force "$WORKTREE"
+            rm -rf "$WORK_DIR"
+
+            echo "✅  Pushed $BRANCH"
+          done

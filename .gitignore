@@ -1,0 +1,7 @@
+# Upstream clone (used only during CI)
+upstream/
+
+# Local build output
+Build/
+upm_work_*/
+worktree_*/

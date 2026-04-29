@@ -1,0 +1,72 @@
+name: Check Upstream for New Release
+
+on:
+  schedule:
+    # Runs every 6 hours
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    outputs:
+      new_version: ${{ steps.compare.outputs.new_version }}
+      upstream_tag: ${{ steps.compare.outputs.upstream_tag }}
+
+    steps:
+      - name: Checkout this repo
+        uses: actions/checkout@v4
+
+      - name: Get latest upstream tag
+        id: upstream
+        run: |
+          LATEST=$(curl -s "https://api.github.com/repos/apple/unityplugins/releases/latest" \
+            -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+            | jq -r '.tag_name')
+          echo "upstream_tag=$LATEST" >> "$GITHUB_OUTPUT"
+          echo "Latest upstream tag: $LATEST"
+
+      - name: Get latest release tag in this repo
+        id: local
+        run: |
+          LOCAL=$(curl -s "https://api.github.com/repos/${{ github.repository }}/releases/latest" \
+            -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+            | jq -r '.tag_name // "none"')
+          echo "local_tag=$LOCAL" >> "$GITHUB_OUTPUT"
+          echo "Latest local tag: $LOCAL"
+
+      - name: Compare tags
+        id: compare
+        run: |
+          UPSTREAM="${{ steps.upstream.outputs.upstream_tag }}"
+          LOCAL="${{ steps.local.outputs.local_tag }}"
+          echo "Upstream: $UPSTREAM  |  Local: $LOCAL"
+          if [ "$UPSTREAM" != "$LOCAL" ] && [ "$UPSTREAM" != "null" ] && [ -n "$UPSTREAM" ]; then
+            echo "new_version=true" >> "$GITHUB_OUTPUT"
+            echo "upstream_tag=$UPSTREAM" >> "$GITHUB_OUTPUT"
+            echo "New version found: $UPSTREAM"
+          else
+            echo "new_version=false" >> "$GITHUB_OUTPUT"
+            echo "upstream_tag=$UPSTREAM" >> "$GITHUB_OUTPUT"
+            echo "Already up to date."
+          fi
+
+  trigger-build:
+    needs: check
+    if: needs.check.outputs.new_version == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger build workflow
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.actions.createWorkflowDispatch({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              workflow_id: 'build-release.yml',
+              ref: 'main',
+              inputs: {
+                upstream_tag: '${{ needs.check.outputs.upstream_tag }}'
+              }
+            });
+            console.log('Triggered build for tag: ${{ needs.check.outputs.upstream_tag }}');
