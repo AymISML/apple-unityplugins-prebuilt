@@ -45,7 +45,7 @@ jobs:
         run: |
           python3 build.py \
             --plugin-list all \
-            --platforms iPhoneSimulator iOS \
+            --platforms iPhoneSimulator iOS macOS \
             --build-config Release \
             --build-action all \
             --output-path ../Build
