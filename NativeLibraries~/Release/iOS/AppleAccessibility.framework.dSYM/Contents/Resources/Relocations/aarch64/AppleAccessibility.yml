@@ -1,0 +1,284 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/runner/Library/Developer/Xcode/DerivedData/Accessibility-azfyfmjlbahblagewohntistkwze/Build/Products/Release-iphoneos/AppleAccessibility.framework/AppleAccessibility'
+relocations:
+  - { offset: 0x89FB2, size: 0x8, addend: 0x0, symName: _AppleAccessibilityVersionString, symObjAddr: 0x0, symBinAddr: 0xCB60, symSize: 0x0 }
+  - { offset: 0x89FE7, size: 0x8, addend: 0x0, symName: _AppleAccessibilityVersionNumber, symObjAddr: 0x40, symBinAddr: 0xCBA0, symSize: 0x0 }
+  - { offset: 0x8A024, size: 0x8, addend: 0x0, symName: '+[_AppleAccessibilitySafeOverride appleAccessibilitySafeOverrideTargetClassName]', symObjAddr: 0x0, symBinAddr: 0x4000, symSize: 0x8 }
+  - { offset: 0x8A038, size: 0x8, addend: 0x0, symName: '+[_AppleAccessibilitySafeOverride appleAccessibilitySafeOverrideTargetClassName]', symObjAddr: 0x0, symBinAddr: 0x4000, symSize: 0x8 }
+  - { offset: 0x8A06B, size: 0x8, addend: 0x0, symName: '+[_AppleAccessibilitySafeOverride installAppleAccessibilitySafeOverrideOnClassNamed:]', symObjAddr: 0x8, symBinAddr: 0x4008, symSize: 0x140 }
+  - { offset: 0x8A28C, size: 0x8, addend: 0x0, symName: '+[_AppleAccessibilitySafeOverride _addAccessibilityUnityOverrideMethod:toClass:isClass:]', symObjAddr: 0x148, symBinAddr: 0x4148, symSize: 0x170 }
+  - { offset: 0x8A5E7, size: 0x8, addend: 0x0, symName: __AppleAccessibilitySafeOverrideInstall, symObjAddr: 0x2B8, symBinAddr: 0x42B8, symSize: 0x50 }
+  - { offset: 0x8A6AC, size: 0x8, addend: 0x0, symName: __AXFloatAlmostEqual, symObjAddr: 0x0, symBinAddr: 0x4308, symSize: 0x18 }
+  - { offset: 0x8A6D7, size: 0x8, addend: 0x0, symName: ___AXNavigationOrderAddElementToRowAndColumnWithForceSplit, symObjAddr: 0x178C, symBinAddr: 0x5A94, symSize: 0x754 }
+  - { offset: 0x8B39E, size: 0x8, addend: 0x0, symName: __AXFloatAlmostEqual, symObjAddr: 0x0, symBinAddr: 0x4308, symSize: 0x18 }
+  - { offset: 0x8B3EF, size: 0x8, addend: 0x0, symName: __AXDoubleAlmostEqual, symObjAddr: 0x18, symBinAddr: 0x4320, symSize: 0x20 }
+  - { offset: 0x8B5CC, size: 0x8, addend: 0x0, symName: __AccessibilityElementOrdering, symObjAddr: 0x38, symBinAddr: 0x4340, symSize: 0x101C }
+  - { offset: 0x8CCA2, size: 0x8, addend: 0x0, symName: ___AXNavigationOrderInsertEmptyRowIntoColumns, symObjAddr: 0x15FC, symBinAddr: 0x5904, symSize: 0x74 }
+  - { offset: 0x8CD5E, size: 0x8, addend: 0x0, symName: ___AXNavigationOrderInsertRange, symObjAddr: 0x1670, symBinAddr: 0x5978, symSize: 0x74 }
+  - { offset: 0x8CE36, size: 0x8, addend: 0x0, symName: ___AXNavigationOrderConstrainRange, symObjAddr: 0x147C, symBinAddr: 0x5784, symSize: 0x180 }
+  - { offset: 0x8D113, size: 0x8, addend: 0x0, symName: ___AXNavigationOrderRebuildColumnWithIndex, symObjAddr: 0x1EE0, symBinAddr: 0x61E8, symSize: 0x1A0 }
+  - { offset: 0x8D445, size: 0x8, addend: 0x0, symName: ___AXNavigationOrderCopyInsertedEmptyColumn, symObjAddr: 0x16E4, symBinAddr: 0x59EC, symSize: 0xA8 }
+  - { offset: 0x8D591, size: 0x8, addend: 0x0, symName: ___AXNavigationOrderCompareUIElementFrames, symObjAddr: 0x1054, symBinAddr: 0x535C, symSize: 0x428 }
+  - { offset: 0x8DAD2, size: 0x8, addend: 0x0, symName: __AccessibilityElementModalFiltering, symObjAddr: 0x2080, symBinAddr: 0x6388, symSize: 0x148 }
+  - { offset: 0x8DB3C, size: 0x8, addend: 0x0, symName: __AccessibilityElementOrderingFrameGetter, symObjAddr: 0x21C8, symBinAddr: 0x64D0, symSize: 0x8C }
+  - { offset: 0x8DB69, size: 0x8, addend: 0x0, symName: __AccessibilityElementModalFilteringGetter, symObjAddr: 0x2254, symBinAddr: 0x655C, symSize: 0x58 }
+  - { offset: 0x8DC0C, size: 0x8, addend: 0x0, symName: '-[AppleAccessibilityElement accessibilityFrame]', symObjAddr: 0x0, symBinAddr: 0x65B4, symSize: 0x144 }
+  - { offset: 0x8DCE8, size: 0x8, addend: 0x0, symName: '-[AppleAccessibilityElement accessibilityFrame]', symObjAddr: 0x0, symBinAddr: 0x65B4, symSize: 0x144 }
+  - { offset: 0x8DD69, size: 0x8, addend: 0x0, symName: '-[AppleAccessibilityElement accessibilityLabel]', symObjAddr: 0x144, symBinAddr: 0x66F8, symSize: 0x100 }
+  - { offset: 0x8DDBB, size: 0x8, addend: 0x0, symName: '-[AppleAccessibilityElement accessibilityTraits]', symObjAddr: 0x244, symBinAddr: 0x67F8, symSize: 0xEC }
+  - { offset: 0x8DE0D, size: 0x8, addend: 0x0, symName: '-[AppleAccessibilityElement isAccessibilityElement]', symObjAddr: 0x330, symBinAddr: 0x68E4, symSize: 0xEC }
+  - { offset: 0x8DE5F, size: 0x8, addend: 0x0, symName: '-[AppleAccessibilityElement accessibilityHint]', symObjAddr: 0x41C, symBinAddr: 0x69D0, symSize: 0x100 }
+  - { offset: 0x8DEB1, size: 0x8, addend: 0x0, symName: '-[AppleAccessibilityElement accessibilityValue]', symObjAddr: 0x51C, symBinAddr: 0x6AD0, symSize: 0x100 }
+  - { offset: 0x8DF03, size: 0x8, addend: 0x0, symName: '-[AppleAccessibilityElement accessibilityIdentifier]', symObjAddr: 0x61C, symBinAddr: 0x6BD0, symSize: 0x100 }
+  - { offset: 0x8DF55, size: 0x8, addend: 0x0, symName: '-[AppleAccessibilityElement accessibilityViewIsModal]', symObjAddr: 0x71C, symBinAddr: 0x6CD0, symSize: 0xEC }
+  - { offset: 0x8DFA7, size: 0x8, addend: 0x0, symName: '-[AppleAccessibilityElement accessibilityActivationPoint]', symObjAddr: 0x808, symBinAddr: 0x6DBC, symSize: 0x110 }
+  - { offset: 0x8E018, size: 0x8, addend: 0x0, symName: '-[AppleAccessibilityElement accessibilityElements]', symObjAddr: 0x918, symBinAddr: 0x6ECC, symSize: 0x224 }
+  - { offset: 0x8E156, size: 0x8, addend: 0x0, symName: '-[AppleAccessibilityElement accessibilityScroll:]', symObjAddr: 0xB3C, symBinAddr: 0x70F0, symSize: 0x100 }
+  - { offset: 0x8E1BF, size: 0x8, addend: 0x0, symName: '-[AppleAccessibilityElement accessibilityPerformMagicTap]', symObjAddr: 0xC3C, symBinAddr: 0x71F0, symSize: 0xEC }
+  - { offset: 0x8E211, size: 0x8, addend: 0x0, symName: '-[AppleAccessibilityElement accessibilityPerformEscape]', symObjAddr: 0xD28, symBinAddr: 0x72DC, symSize: 0xEC }
+  - { offset: 0x8E263, size: 0x8, addend: 0x0, symName: '-[AppleAccessibilityElement accessibilityActivate]', symObjAddr: 0xE14, symBinAddr: 0x73C8, symSize: 0xEC }
+  - { offset: 0x8E2B5, size: 0x8, addend: 0x0, symName: '-[AppleAccessibilityElement accessibilityIncrement]', symObjAddr: 0xF00, symBinAddr: 0x74B4, symSize: 0xF0 }
+  - { offset: 0x8E303, size: 0x8, addend: 0x0, symName: '-[AppleAccessibilityElement accessibilityDecrement]', symObjAddr: 0xFF0, symBinAddr: 0x75A4, symSize: 0xF0 }
+  - { offset: 0x8E351, size: 0x8, addend: 0x0, symName: '-[AppleAccessibilityElement accessibilityContainer]', symObjAddr: 0x10E0, symBinAddr: 0x7694, symSize: 0x11C }
+  - { offset: 0x8E3A7, size: 0x8, addend: 0x0, symName: '-[AppleAccessibilityElement accessibilityCustomActions]', symObjAddr: 0x11FC, symBinAddr: 0x77B0, symSize: 0x308 }
+  - { offset: 0x8E498, size: 0x8, addend: 0x0, symName: '___55-[AppleAccessibilityElement accessibilityCustomActions]_block_invoke', symObjAddr: 0x1504, symBinAddr: 0x7AB8, symSize: 0xFC }
+  - { offset: 0x8E519, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32s, symObjAddr: 0x1600, symBinAddr: 0x7BB4, symSize: 0x8 }
+  - { offset: 0x8E540, size: 0x8, addend: 0x0, symName: ___destroy_helper_block_e8_32s, symObjAddr: 0x1608, symBinAddr: 0x7BBC, symSize: 0x8 }
+  - { offset: 0x8E55F, size: 0x8, addend: 0x0, symName: '-[AppleAccessibilityElement identifier]', symObjAddr: 0x1610, symBinAddr: 0x7BC4, symSize: 0x10 }
+  - { offset: 0x8E596, size: 0x8, addend: 0x0, symName: '-[AppleAccessibilityElement setIdentifier:]', symObjAddr: 0x1620, symBinAddr: 0x7BD4, symSize: 0xC }
+  - { offset: 0x8E5D5, size: 0x8, addend: 0x0, symName: '-[AppleAccessibilityElement parent]', symObjAddr: 0x162C, symBinAddr: 0x7BE0, symSize: 0x10 }
+  - { offset: 0x8E60C, size: 0x8, addend: 0x0, symName: '-[AppleAccessibilityElement setParent:]', symObjAddr: 0x163C, symBinAddr: 0x7BF0, symSize: 0xC }
+  - { offset: 0x8E64B, size: 0x8, addend: 0x0, symName: '-[AppleAccessibilityElement actions]', symObjAddr: 0x1648, symBinAddr: 0x7BFC, symSize: 0x10 }
+  - { offset: 0x8E682, size: 0x8, addend: 0x0, symName: '-[AppleAccessibilityElement setActions:]', symObjAddr: 0x1658, symBinAddr: 0x7C0C, symSize: 0x14 }
+  - { offset: 0x8E6C3, size: 0x8, addend: 0x0, symName: '-[AppleAccessibilityElement .cxx_destruct]', symObjAddr: 0x166C, symBinAddr: 0x7C20, symSize: 0x54 }
+  - { offset: 0x8E6F6, size: 0x8, addend: 0x0, symName: '-[AccessibilityElementIndexPair description]', symObjAddr: 0x16C0, symBinAddr: 0x7C74, symSize: 0x100 }
+  - { offset: 0x8E72D, size: 0x8, addend: 0x0, symName: '-[AccessibilityElementIndexPair identifier]', symObjAddr: 0x17C0, symBinAddr: 0x7D74, symSize: 0x8 }
+  - { offset: 0x8E764, size: 0x8, addend: 0x0, symName: '-[AccessibilityElementIndexPair setIdentifier:]', symObjAddr: 0x17C8, symBinAddr: 0x7D7C, symSize: 0x8 }
+  - { offset: 0x8E7A3, size: 0x8, addend: 0x0, symName: '-[AccessibilityElementIndexPair parentIdentifier]', symObjAddr: 0x17D0, symBinAddr: 0x7D84, symSize: 0x8 }
+  - { offset: 0x8E7DA, size: 0x8, addend: 0x0, symName: '-[AccessibilityElementIndexPair setParentIdentifier:]', symObjAddr: 0x17D8, symBinAddr: 0x7D8C, symSize: 0x8 }
+  - { offset: 0x8E819, size: 0x8, addend: 0x0, symName: '-[AccessibilityElementIndexPair element]', symObjAddr: 0x17E0, symBinAddr: 0x7D94, symSize: 0x8 }
+  - { offset: 0x8E850, size: 0x8, addend: 0x0, symName: '-[AccessibilityElementIndexPair setElement:]', symObjAddr: 0x17E8, symBinAddr: 0x7D9C, symSize: 0xC }
+  - { offset: 0x8E891, size: 0x8, addend: 0x0, symName: '-[AccessibilityElementIndexPair .cxx_destruct]', symObjAddr: 0x17F4, symBinAddr: 0x7DA8, symSize: 0x3C }
+  - { offset: 0x8EA22, size: 0x8, addend: 0x0, symName: '+[UnityViewAccessibility(SafeOverride) appleAccessibilitySafeOverrideTargetClassName]', symObjAddr: 0x0, symBinAddr: 0x7DE4, symSize: 0xC }
+  - { offset: 0x8EA76, size: 0x8, addend: 0x0, symName: '+[UnityViewAccessibility(SafeOverride) appleAccessibilitySafeOverrideTargetClassName]', symObjAddr: 0x0, symBinAddr: 0x7DE4, symSize: 0xC }
+  - { offset: 0x8EAA9, size: 0x8, addend: 0x0, symName: '+[UnityViewAccessibility(SafeOverride) _initializeAppleAccessibilitySafeOverride]', symObjAddr: 0xC, symBinAddr: 0x7DF0, symSize: 0xC }
+  - { offset: 0x8EADA, size: 0x8, addend: 0x0, symName: '-[UnityViewAccessibility isAccessibilityElement]', symObjAddr: 0x18, symBinAddr: 0x7DFC, symSize: 0x80 }
+  - { offset: 0x8EB11, size: 0x8, addend: 0x0, symName: '-[UnityViewAccessibility accessibilityTraits]', symObjAddr: 0x98, symBinAddr: 0x7E7C, symSize: 0x88 }
+  - { offset: 0x8EB48, size: 0x8, addend: 0x0, symName: '-[UnityViewAccessibility accessibilityElements]', symObjAddr: 0x120, symBinAddr: 0x7F04, symSize: 0x54 }
+  - { offset: 0x8EC1F, size: 0x8, addend: 0x0, symName: __UnityAX_InitializeAXRuntime, symObjAddr: 0xDD8, symBinAddr: 0x8D30, symSize: 0x28 }
+  - { offset: 0x8EC43, size: 0x8, addend: 0x0, symName: __UnityAX_InitializeAXRuntime.onceToken, symObjAddr: 0xBE68, symBinAddr: 0x126D0, symSize: 0x0 }
+  - { offset: 0x8EC7E, size: 0x8, addend: 0x0, symName: __observer, symObjAddr: 0xBE70, symBinAddr: 0x126D8, symSize: 0x0 }
+  - { offset: 0x8ECAB, size: 0x8, addend: 0x0, symName: ___axFrameDelegate, symObjAddr: 0xBD38, symBinAddr: 0x125A0, symSize: 0x0 }
+  - { offset: 0x8ECEF, size: 0x8, addend: 0x0, symName: ___axLabelDelegate, symObjAddr: 0xBD40, symBinAddr: 0x125A8, symSize: 0x0 }
+  - { offset: 0x8ED10, size: 0x8, addend: 0x0, symName: ___axTraitsDelegate, symObjAddr: 0xBD48, symBinAddr: 0x125B0, symSize: 0x0 }
+  - { offset: 0x8ED48, size: 0x8, addend: 0x0, symName: ___axIsElementDelegate, symObjAddr: 0xBD50, symBinAddr: 0x125B8, symSize: 0x0 }
+  - { offset: 0x8ED80, size: 0x8, addend: 0x0, symName: ___axHintDelegate, symObjAddr: 0xBD58, symBinAddr: 0x125C0, symSize: 0x0 }
+  - { offset: 0x8EDA1, size: 0x8, addend: 0x0, symName: ___axValueDelegate, symObjAddr: 0xBD60, symBinAddr: 0x125C8, symSize: 0x0 }
+  - { offset: 0x8EDC2, size: 0x8, addend: 0x0, symName: ___axIdentifierDelegate, symObjAddr: 0xBD68, symBinAddr: 0x125D0, symSize: 0x0 }
+  - { offset: 0x8EDE3, size: 0x8, addend: 0x0, symName: ___axViewIsModalDelegate, symObjAddr: 0xBD70, symBinAddr: 0x125D8, symSize: 0x0 }
+  - { offset: 0x8EE04, size: 0x8, addend: 0x0, symName: ___axActivationPointDelegate, symObjAddr: 0xBD78, symBinAddr: 0x125E0, symSize: 0x0 }
+  - { offset: 0x8EE25, size: 0x8, addend: 0x0, symName: ___axCustomActionsCountDelegate, symObjAddr: 0xBD80, symBinAddr: 0x125E8, symSize: 0x0 }
+  - { offset: 0x8EE46, size: 0x8, addend: 0x0, symName: ___axPerformCustomActionDelegate, symObjAddr: 0xBD88, symBinAddr: 0x125F0, symSize: 0x0 }
+  - { offset: 0x8EE7C, size: 0x8, addend: 0x0, symName: ___axCustomActionNameDelegate, symObjAddr: 0xBD90, symBinAddr: 0x125F8, symSize: 0x0 }
+  - { offset: 0x8EEB2, size: 0x8, addend: 0x0, symName: ___axScrollDelegate, symObjAddr: 0xBD98, symBinAddr: 0x12600, symSize: 0x0 }
+  - { offset: 0x8EEEF, size: 0x8, addend: 0x0, symName: ___axPerformMagicTapDelegate, symObjAddr: 0xBDA0, symBinAddr: 0x12608, symSize: 0x0 }
+  - { offset: 0x8EF10, size: 0x8, addend: 0x0, symName: ___axPerformEscapeDelegate, symObjAddr: 0xBDA8, symBinAddr: 0x12610, symSize: 0x0 }
+  - { offset: 0x8EF31, size: 0x8, addend: 0x0, symName: ___axActivateDelegate, symObjAddr: 0xBDB0, symBinAddr: 0x12618, symSize: 0x0 }
+  - { offset: 0x8EF52, size: 0x8, addend: 0x0, symName: ___axIncrementDelegate, symObjAddr: 0xBDB8, symBinAddr: 0x12620, symSize: 0x0 }
+  - { offset: 0x8EF7F, size: 0x8, addend: 0x0, symName: ___axDecrementDelegate, symObjAddr: 0xBDC0, symBinAddr: 0x12628, symSize: 0x0 }
+  - { offset: 0x8EFA0, size: 0x8, addend: 0x0, symName: ___axPreferredContentSizeCategoryDidChangeNotificationDelegate, symObjAddr: 0xBDC8, symBinAddr: 0x12630, symSize: 0x0 }
+  - { offset: 0x8EFC7, size: 0x8, addend: 0x0, symName: ___axIsVoiceOverRunningDidChangeNotificationDelegate, symObjAddr: 0xBDD0, symBinAddr: 0x12638, symSize: 0x0 }
+  - { offset: 0x8EFDD, size: 0x8, addend: 0x0, symName: ___axIsSwitchControlRunningDidChangeNotificationDelegate, symObjAddr: 0xBDD8, symBinAddr: 0x12640, symSize: 0x0 }
+  - { offset: 0x8EFF3, size: 0x8, addend: 0x0, symName: ___axIsMonoAudioEnabledDidChangeNotificationDelegate, symObjAddr: 0xBDE0, symBinAddr: 0x12648, symSize: 0x0 }
+  - { offset: 0x8F009, size: 0x8, addend: 0x0, symName: ___axIsClosedCaptioningEnabledDidChangeNotificationDelegate, symObjAddr: 0xBDE8, symBinAddr: 0x12650, symSize: 0x0 }
+  - { offset: 0x8F01F, size: 0x8, addend: 0x0, symName: ___axIsInvertColorsEnabledDidChangeNotificationDelegate, symObjAddr: 0xBDF0, symBinAddr: 0x12658, symSize: 0x0 }
+  - { offset: 0x8F035, size: 0x8, addend: 0x0, symName: ___axIsGuidedAccessEnabledDidChangeNotificationDelegate, symObjAddr: 0xBDF8, symBinAddr: 0x12660, symSize: 0x0 }
+  - { offset: 0x8F04B, size: 0x8, addend: 0x0, symName: ___axIsBoldTextEnabledDidChangeNotificationDelegate, symObjAddr: 0xBE00, symBinAddr: 0x12668, symSize: 0x0 }
+  - { offset: 0x8F061, size: 0x8, addend: 0x0, symName: ___axButtonShapesEnabledDidChangeNotificationDelegate, symObjAddr: 0xBE08, symBinAddr: 0x12670, symSize: 0x0 }
+  - { offset: 0x8F078, size: 0x8, addend: 0x0, symName: ___axIsGrayscaleEnabledDidChangeNotificationDelegate, symObjAddr: 0xBE10, symBinAddr: 0x12678, symSize: 0x0 }
+  - { offset: 0x8F08F, size: 0x8, addend: 0x0, symName: ___axIsReduceTransparencyEnabledDidChangeNotificationDelegate, symObjAddr: 0xBE18, symBinAddr: 0x12680, symSize: 0x0 }
+  - { offset: 0x8F0A6, size: 0x8, addend: 0x0, symName: ___axIsReduceMotionEnabledDidChangeNotificationDelegate, symObjAddr: 0xBE20, symBinAddr: 0x12688, symSize: 0x0 }
+  - { offset: 0x8F0BD, size: 0x8, addend: 0x0, symName: ___axPrefersCrossFadeTransitionsDidChangeNotificationDelegate, symObjAddr: 0xBE28, symBinAddr: 0x12690, symSize: 0x0 }
+  - { offset: 0x8F0D4, size: 0x8, addend: 0x0, symName: ___axIsVideoAutoplayEnabledDidChangeNotificationDelegate, symObjAddr: 0xBE30, symBinAddr: 0x12698, symSize: 0x0 }
+  - { offset: 0x8F0EB, size: 0x8, addend: 0x0, symName: ___axDarkerSystemColorsEnabledDidChangeNotificationDelegate, symObjAddr: 0xBE38, symBinAddr: 0x126A0, symSize: 0x0 }
+  - { offset: 0x8F102, size: 0x8, addend: 0x0, symName: ___axIsSpeakSelectionEnabledDidChangeNotificationDelegate, symObjAddr: 0xBE40, symBinAddr: 0x126A8, symSize: 0x0 }
+  - { offset: 0x8F119, size: 0x8, addend: 0x0, symName: ___axIsSpeakScreenEnabledDidChangeNotificationDelegate, symObjAddr: 0xBE48, symBinAddr: 0x126B0, symSize: 0x0 }
+  - { offset: 0x8F130, size: 0x8, addend: 0x0, symName: ___axIsShakeToUndoEnabledDidChangeNotificationDelegate, symObjAddr: 0xBE50, symBinAddr: 0x126B8, symSize: 0x0 }
+  - { offset: 0x8F147, size: 0x8, addend: 0x0, symName: ___axShouldDifferentiateWithoutColorDidChangeNotificationDelegate, symObjAddr: 0xBE58, symBinAddr: 0x126C0, symSize: 0x0 }
+  - { offset: 0x8F15E, size: 0x8, addend: 0x0, symName: ___axIsOnOffSwitchLabelsEnabledDidChangeNotificationDelegate, symObjAddr: 0xBE60, symBinAddr: 0x126C8, symSize: 0x0 }
+  - { offset: 0x8F170, size: 0x8, addend: 0x0, symName: __UnityAX_PostFeatureEnabledNotification, symObjAddr: 0x0, symBinAddr: 0x7F58, symSize: 0xAC }
+  - { offset: 0x8F1A7, size: 0x8, addend: 0x0, symName: __UnityAX_PostScreenChangedNotification, symObjAddr: 0xAC, symBinAddr: 0x8004, symSize: 0x14 }
+  - { offset: 0x8F210, size: 0x8, addend: 0x0, symName: __UnityAX_PostLayoutChangedNotification, symObjAddr: 0xC0, symBinAddr: 0x8018, symSize: 0x14 }
+  - { offset: 0x8F23C, size: 0x8, addend: 0x0, symName: __UnityAX_PostAnnouncementNotification, symObjAddr: 0xD4, symBinAddr: 0x802C, symSize: 0x68 }
+  - { offset: 0x8F295, size: 0x8, addend: 0x0, symName: __UnityAX_PostPageScrolledNotification, symObjAddr: 0x13C, symBinAddr: 0x8094, symSize: 0x68 }
+  - { offset: 0x8F2EE, size: 0x8, addend: 0x0, symName: __UnityAX_registerAccessibilityFrame, symObjAddr: 0x1A4, symBinAddr: 0x80FC, symSize: 0xC }
+  - { offset: 0x8F313, size: 0x8, addend: 0x0, symName: __UnityAX_registerAccessibilityLabel, symObjAddr: 0x1B0, symBinAddr: 0x8108, symSize: 0xC }
+  - { offset: 0x8F338, size: 0x8, addend: 0x0, symName: __UnityAX_registerAccessibilityTraits, symObjAddr: 0x1BC, symBinAddr: 0x8114, symSize: 0xC }
+  - { offset: 0x8F35D, size: 0x8, addend: 0x0, symName: __UnityAX_registerAccessibilityIsElement, symObjAddr: 0x1C8, symBinAddr: 0x8120, symSize: 0xC }
+  - { offset: 0x8F382, size: 0x8, addend: 0x0, symName: __UnityAX_registerAccessibilityHint, symObjAddr: 0x1D4, symBinAddr: 0x812C, symSize: 0xC }
+  - { offset: 0x8F3A7, size: 0x8, addend: 0x0, symName: __UnityAX_registerAccessibilityValue, symObjAddr: 0x1E0, symBinAddr: 0x8138, symSize: 0xC }
+  - { offset: 0x8F3CC, size: 0x8, addend: 0x0, symName: __UnityAX_registerAccessibilityIdentifier, symObjAddr: 0x1EC, symBinAddr: 0x8144, symSize: 0xC }
+  - { offset: 0x8F3F1, size: 0x8, addend: 0x0, symName: __UnityAX_registerAccessibilityViewIsModal, symObjAddr: 0x1F8, symBinAddr: 0x8150, symSize: 0xC }
+  - { offset: 0x8F416, size: 0x8, addend: 0x0, symName: __UnityAX_registerAccessibilityActivationPoint, symObjAddr: 0x204, symBinAddr: 0x815C, symSize: 0xC }
+  - { offset: 0x8F43B, size: 0x8, addend: 0x0, symName: __UnityAX_registerAccessibilityCustomActionsCount, symObjAddr: 0x210, symBinAddr: 0x8168, symSize: 0xC }
+  - { offset: 0x8F460, size: 0x8, addend: 0x0, symName: __UnityAX_registerAccessibilityPerformCustomAction, symObjAddr: 0x21C, symBinAddr: 0x8174, symSize: 0xC }
+  - { offset: 0x8F485, size: 0x8, addend: 0x0, symName: __UnityAX_registerAccessibilityCustomActionName, symObjAddr: 0x228, symBinAddr: 0x8180, symSize: 0xC }
+  - { offset: 0x8F4AA, size: 0x8, addend: 0x0, symName: __UnityAX_registerAccessibilityScroll, symObjAddr: 0x234, symBinAddr: 0x818C, symSize: 0xC }
+  - { offset: 0x8F4CF, size: 0x8, addend: 0x0, symName: __UnityAX_registerAccessibilityPerformMagicTap, symObjAddr: 0x240, symBinAddr: 0x8198, symSize: 0xC }
+  - { offset: 0x8F4F4, size: 0x8, addend: 0x0, symName: __UnityAX_registerAccessibilityPerformEscape, symObjAddr: 0x24C, symBinAddr: 0x81A4, symSize: 0xC }
+  - { offset: 0x8F519, size: 0x8, addend: 0x0, symName: __UnityAX_registerAccessibilityActivate, symObjAddr: 0x258, symBinAddr: 0x81B0, symSize: 0xC }
+  - { offset: 0x8F53E, size: 0x8, addend: 0x0, symName: __UnityAX_registerAccessibilityIncrement, symObjAddr: 0x264, symBinAddr: 0x81BC, symSize: 0xC }
+  - { offset: 0x8F563, size: 0x8, addend: 0x0, symName: __UnityAX_registerAccessibilityDecrement, symObjAddr: 0x270, symBinAddr: 0x81C8, symSize: 0xC }
+  - { offset: 0x8F588, size: 0x8, addend: 0x0, symName: __UnityAX_registerAccessibilityPreferredContentSizeCategoryDidChangeNotification, symObjAddr: 0x27C, symBinAddr: 0x81D4, symSize: 0xC }
+  - { offset: 0x8F5AD, size: 0x8, addend: 0x0, symName: __UnityAX_UIAccessibilityPreferredContentSizeCategory, symObjAddr: 0x288, symBinAddr: 0x81E0, symSize: 0x1D4 }
+  - { offset: 0x8F5D8, size: 0x8, addend: 0x0, symName: __UnityAX_UIAccessibilityPreferredContentSizeMultiplier, symObjAddr: 0x45C, symBinAddr: 0x83B4, symSize: 0x190 }
+  - { offset: 0x8F662, size: 0x8, addend: 0x0, symName: __UnityAX_registerAccessibilityIsVoiceOverRunningDidChangeNotification, symObjAddr: 0x5EC, symBinAddr: 0x8544, symSize: 0xC }
+  - { offset: 0x8F687, size: 0x8, addend: 0x0, symName: __UnityAX_UIAccessibilityIsVoiceOverRunning, symObjAddr: 0x5F8, symBinAddr: 0x8550, symSize: 0x4 }
+  - { offset: 0x8F6A5, size: 0x8, addend: 0x0, symName: __UnityAX_UIAccessibilityIsVoiceOverRunning, symObjAddr: 0x5F8, symBinAddr: 0x8550, symSize: 0x4 }
+  - { offset: 0x8F6BD, size: 0x8, addend: 0x0, symName: __UnityAX_registerAccessibilityIsSwitchControlRunningDidChangeNotification, symObjAddr: 0x5FC, symBinAddr: 0x8554, symSize: 0xC }
+  - { offset: 0x8F6E2, size: 0x8, addend: 0x0, symName: __UnityAX_UIAccessibilityIsSwitchControlRunning, symObjAddr: 0x608, symBinAddr: 0x8560, symSize: 0x4 }
+  - { offset: 0x8F700, size: 0x8, addend: 0x0, symName: __UnityAX_UIAccessibilityIsSwitchControlRunning, symObjAddr: 0x608, symBinAddr: 0x8560, symSize: 0x4 }
+  - { offset: 0x8F718, size: 0x8, addend: 0x0, symName: __UnityAX_registerAccessibilityIsMonoAudioEnabledDidChangeNotification, symObjAddr: 0x60C, symBinAddr: 0x8564, symSize: 0xC }
+  - { offset: 0x8F73D, size: 0x8, addend: 0x0, symName: __UnityAX_UIAccessibilityIsMonoAudioEnabled, symObjAddr: 0x618, symBinAddr: 0x8570, symSize: 0x4 }
+  - { offset: 0x8F75B, size: 0x8, addend: 0x0, symName: __UnityAX_UIAccessibilityIsMonoAudioEnabled, symObjAddr: 0x618, symBinAddr: 0x8570, symSize: 0x4 }
+  - { offset: 0x8F773, size: 0x8, addend: 0x0, symName: __UnityAX_registerAccessibilityIsClosedCaptioningEnabledDidChangeNotification, symObjAddr: 0x61C, symBinAddr: 0x8574, symSize: 0xC }
+  - { offset: 0x8F798, size: 0x8, addend: 0x0, symName: __UnityAX_UIAccessibilityIsClosedCaptioningEnabled, symObjAddr: 0x628, symBinAddr: 0x8580, symSize: 0x4 }
+  - { offset: 0x8F7B6, size: 0x8, addend: 0x0, symName: __UnityAX_UIAccessibilityIsClosedCaptioningEnabled, symObjAddr: 0x628, symBinAddr: 0x8580, symSize: 0x4 }
+  - { offset: 0x8F7CE, size: 0x8, addend: 0x0, symName: __UnityAX_registerAccessibilityIsInvertColorsEnabledDidChangeNotification, symObjAddr: 0x62C, symBinAddr: 0x8584, symSize: 0xC }
+  - { offset: 0x8F7F3, size: 0x8, addend: 0x0, symName: __UnityAX_UIAccessibilityIsInvertColorsEnabled, symObjAddr: 0x638, symBinAddr: 0x8590, symSize: 0x4 }
+  - { offset: 0x8F811, size: 0x8, addend: 0x0, symName: __UnityAX_UIAccessibilityIsInvertColorsEnabled, symObjAddr: 0x638, symBinAddr: 0x8590, symSize: 0x4 }
+  - { offset: 0x8F829, size: 0x8, addend: 0x0, symName: __UnityAX_registerAccessibilityIsGuidedAccessEnabledDidChangeNotification, symObjAddr: 0x63C, symBinAddr: 0x8594, symSize: 0xC }
+  - { offset: 0x8F84E, size: 0x8, addend: 0x0, symName: __UnityAX_UIAccessibilityIsGuidedAccessEnabled, symObjAddr: 0x648, symBinAddr: 0x85A0, symSize: 0x4 }
+  - { offset: 0x8F86C, size: 0x8, addend: 0x0, symName: __UnityAX_UIAccessibilityIsGuidedAccessEnabled, symObjAddr: 0x648, symBinAddr: 0x85A0, symSize: 0x4 }
+  - { offset: 0x8F884, size: 0x8, addend: 0x0, symName: __UnityAX_registerAccessibilityIsBoldTextEnabledDidChangeNotification, symObjAddr: 0x64C, symBinAddr: 0x85A4, symSize: 0xC }
+  - { offset: 0x8F8A9, size: 0x8, addend: 0x0, symName: __UnityAX_UIAccessibilityIsBoldTextEnabled, symObjAddr: 0x658, symBinAddr: 0x85B0, symSize: 0x4 }
+  - { offset: 0x8F8C7, size: 0x8, addend: 0x0, symName: __UnityAX_UIAccessibilityIsBoldTextEnabled, symObjAddr: 0x658, symBinAddr: 0x85B0, symSize: 0x4 }
+  - { offset: 0x8F8DF, size: 0x8, addend: 0x0, symName: __UnityAX_registerAccessibilityButtonShapesEnabledDidChangeNotification, symObjAddr: 0x65C, symBinAddr: 0x85B4, symSize: 0xC }
+  - { offset: 0x8F904, size: 0x8, addend: 0x0, symName: __UnityAX_UIAccessibilityButtonShapesEnabled, symObjAddr: 0x668, symBinAddr: 0x85C0, symSize: 0x2C }
+  - { offset: 0x8F93A, size: 0x8, addend: 0x0, symName: __UnityAX_registerAccessibilityIsGrayscaleEnabledDidChangeNotification, symObjAddr: 0x694, symBinAddr: 0x85EC, symSize: 0xC }
+  - { offset: 0x8F961, size: 0x8, addend: 0x0, symName: __UnityAX_UIAccessibilityIsGrayscaleEnabled, symObjAddr: 0x6A0, symBinAddr: 0x85F8, symSize: 0x4 }
+  - { offset: 0x8F980, size: 0x8, addend: 0x0, symName: __UnityAX_UIAccessibilityIsGrayscaleEnabled, symObjAddr: 0x6A0, symBinAddr: 0x85F8, symSize: 0x4 }
+  - { offset: 0x8F998, size: 0x8, addend: 0x0, symName: __UnityAX_registerAccessibilityIsReduceTransparencyEnabledDidChangeNotification, symObjAddr: 0x6A4, symBinAddr: 0x85FC, symSize: 0xC }
+  - { offset: 0x8F9BF, size: 0x8, addend: 0x0, symName: __UnityAX_UIAccessibilityIsReduceTransparencyEnabled, symObjAddr: 0x6B0, symBinAddr: 0x8608, symSize: 0x4 }
+  - { offset: 0x8F9DE, size: 0x8, addend: 0x0, symName: __UnityAX_UIAccessibilityIsReduceTransparencyEnabled, symObjAddr: 0x6B0, symBinAddr: 0x8608, symSize: 0x4 }
+  - { offset: 0x8F9F6, size: 0x8, addend: 0x0, symName: __UnityAX_registerAccessibilityIsReduceMotionEnabledDidChangeNotification, symObjAddr: 0x6B4, symBinAddr: 0x860C, symSize: 0xC }
+  - { offset: 0x8FA1D, size: 0x8, addend: 0x0, symName: __UnityAX_UIAccessibilityIsReduceMotionEnabled, symObjAddr: 0x6C0, symBinAddr: 0x8618, symSize: 0x4 }
+  - { offset: 0x8FA3C, size: 0x8, addend: 0x0, symName: __UnityAX_UIAccessibilityIsReduceMotionEnabled, symObjAddr: 0x6C0, symBinAddr: 0x8618, symSize: 0x4 }
+  - { offset: 0x8FA54, size: 0x8, addend: 0x0, symName: __UnityAX_registerAccessibilityPrefersCrossFadeTransitionsDidChangeNotification, symObjAddr: 0x6C4, symBinAddr: 0x861C, symSize: 0xC }
+  - { offset: 0x8FA7B, size: 0x8, addend: 0x0, symName: __UnityAX_UIAccessibilityPrefersCrossFadeTransitions, symObjAddr: 0x6D0, symBinAddr: 0x8628, symSize: 0x2C }
+  - { offset: 0x8FAB2, size: 0x8, addend: 0x0, symName: __UnityAX_registerAccessibilityIsVideoAutoplayEnabledDidChangeNotification, symObjAddr: 0x6FC, symBinAddr: 0x8654, symSize: 0xC }
+  - { offset: 0x8FAD9, size: 0x8, addend: 0x0, symName: __UnityAX_UIAccessibilityIsVideoAutoplayEnabled, symObjAddr: 0x708, symBinAddr: 0x8660, symSize: 0x2C }
+  - { offset: 0x8FB10, size: 0x8, addend: 0x0, symName: __UnityAX_registerAccessibilityDarkerSystemColorsEnabledDidChangeNotification, symObjAddr: 0x734, symBinAddr: 0x868C, symSize: 0xC }
+  - { offset: 0x8FB37, size: 0x8, addend: 0x0, symName: __UnityAX_UIAccessibilityDarkerSystemColorsEnabled, symObjAddr: 0x740, symBinAddr: 0x8698, symSize: 0x4 }
+  - { offset: 0x8FB56, size: 0x8, addend: 0x0, symName: __UnityAX_UIAccessibilityDarkerSystemColorsEnabled, symObjAddr: 0x740, symBinAddr: 0x8698, symSize: 0x4 }
+  - { offset: 0x8FB6E, size: 0x8, addend: 0x0, symName: __UnityAX_registerAccessibilityIsSpeakSelectionEnabledDidChangeNotification, symObjAddr: 0x744, symBinAddr: 0x869C, symSize: 0xC }
+  - { offset: 0x8FB95, size: 0x8, addend: 0x0, symName: __UnityAX_UIAccessibilityIsSpeakSelectionEnabled, symObjAddr: 0x750, symBinAddr: 0x86A8, symSize: 0x4 }
+  - { offset: 0x8FBB4, size: 0x8, addend: 0x0, symName: __UnityAX_UIAccessibilityIsSpeakSelectionEnabled, symObjAddr: 0x750, symBinAddr: 0x86A8, symSize: 0x4 }
+  - { offset: 0x8FBCC, size: 0x8, addend: 0x0, symName: __UnityAX_registerAccessibilityIsSpeakScreenEnabledDidChangeNotification, symObjAddr: 0x754, symBinAddr: 0x86AC, symSize: 0xC }
+  - { offset: 0x8FBF3, size: 0x8, addend: 0x0, symName: __UnityAX_UIAccessibilityIsSpeakScreenEnabled, symObjAddr: 0x760, symBinAddr: 0x86B8, symSize: 0x4 }
+  - { offset: 0x8FC12, size: 0x8, addend: 0x0, symName: __UnityAX_UIAccessibilityIsSpeakScreenEnabled, symObjAddr: 0x760, symBinAddr: 0x86B8, symSize: 0x4 }
+  - { offset: 0x8FC2A, size: 0x8, addend: 0x0, symName: __UnityAX_registerAccessibilityIsShakeToUndoEnabledDidChangeNotification, symObjAddr: 0x764, symBinAddr: 0x86BC, symSize: 0xC }
+  - { offset: 0x8FC51, size: 0x8, addend: 0x0, symName: __UnityAX_UIAccessibilityIsShakeToUndoEnabled, symObjAddr: 0x770, symBinAddr: 0x86C8, symSize: 0x4 }
+  - { offset: 0x8FC70, size: 0x8, addend: 0x0, symName: __UnityAX_UIAccessibilityIsShakeToUndoEnabled, symObjAddr: 0x770, symBinAddr: 0x86C8, symSize: 0x4 }
+  - { offset: 0x8FC88, size: 0x8, addend: 0x0, symName: __UnityAX_registerAccessibilityShouldDifferentiateWithoutColorDidChangeNotification, symObjAddr: 0x774, symBinAddr: 0x86CC, symSize: 0xC }
+  - { offset: 0x8FCAF, size: 0x8, addend: 0x0, symName: __UnityAX_UIAccessibilityShouldDifferentiateWithoutColor, symObjAddr: 0x780, symBinAddr: 0x86D8, symSize: 0x2C }
+  - { offset: 0x8FCE6, size: 0x8, addend: 0x0, symName: __UnityAX_registerAccessibilityIsOnOffSwitchLabelsEnabledDidChangeNotification, symObjAddr: 0x7AC, symBinAddr: 0x8704, symSize: 0xC }
+  - { offset: 0x8FD0D, size: 0x8, addend: 0x0, symName: __UnityAX_UIAccessibilityIsOnOffSwitchLabelsEnabled, symObjAddr: 0x7B8, symBinAddr: 0x8710, symSize: 0x2C }
+  - { offset: 0x8FD44, size: 0x8, addend: 0x0, symName: '-[_AppleAccessibilityNotificationObserver _accessibilityStatusChangedCallback:]', symObjAddr: 0x7E4, symBinAddr: 0x873C, symSize: 0x5F4 }
+  - { offset: 0x8FDBF, size: 0x8, addend: 0x0, symName: __UnityAX_InitializeAXRuntime.cold.1, symObjAddr: 0x1D4C, symBinAddr: 0xB4EC, symSize: 0x14 }
+  - { offset: 0x8FDDB, size: 0x8, addend: 0x0, symName: __UnityAX_InitializeAXRuntime.cold.1, symObjAddr: 0x1D4C, symBinAddr: 0xB4EC, symSize: 0x14 }
+  - { offset: 0x8FDEE, size: 0x8, addend: 0x0, symName: ____UnityAX_InitializeAXRuntime_block_invoke, symObjAddr: 0xE00, symBinAddr: 0x8D58, symSize: 0x63C }
+  - { offset: 0x8FE58, size: 0x8, addend: 0x0, symName: ____UnityAX_InitializeAXRuntime_block_invoke_2, symObjAddr: 0x143C, symBinAddr: 0x9394, symSize: 0xB4 }
+  - { offset: 0x8FEE2, size: 0x8, addend: 0x0, symName: ____UnityAX_InitializeAXRuntime_block_invoke_3, symObjAddr: 0x14F0, symBinAddr: 0x9448, symSize: 0x70 }
+  - { offset: 0x8FF4C, size: 0x8, addend: 0x0, symName: ____UnityAX_InitializeAXRuntime_block_invoke_4, symObjAddr: 0x1560, symBinAddr: 0x94B8, symSize: 0x38 }
+  - { offset: 0x8FF96, size: 0x8, addend: 0x0, symName: ____UnityAX_InitializeAXRuntime_block_invoke_5, symObjAddr: 0x1598, symBinAddr: 0x94F0, symSize: 0x38 }
+  - { offset: 0x8FFE0, size: 0x8, addend: 0x0, symName: ____UnityAX_InitializeAXRuntime_block_invoke_6, symObjAddr: 0x15D0, symBinAddr: 0x9528, symSize: 0x78 }
+  - { offset: 0x9003B, size: 0x8, addend: 0x0, symName: ____UnityAX_InitializeAXRuntime_block_invoke_7, symObjAddr: 0x1648, symBinAddr: 0x95A0, symSize: 0xA4 }
+  - { offset: 0x900BE, size: 0x8, addend: 0x0, symName: ____UnityAX_InitializeAXRuntime_block_invoke_8, symObjAddr: 0x16EC, symBinAddr: 0x9644, symSize: 0x3C }
+  - { offset: 0x90108, size: 0x8, addend: 0x0, symName: ____UnityAX_InitializeAXRuntime_block_invoke_9, symObjAddr: 0x1728, symBinAddr: 0x9680, symSize: 0x70 }
+  - { offset: 0x90172, size: 0x8, addend: 0x0, symName: ____UnityAX_InitializeAXRuntime_block_invoke_10, symObjAddr: 0x1798, symBinAddr: 0x96F0, symSize: 0x70 }
+  - { offset: 0x901DC, size: 0x8, addend: 0x0, symName: ____UnityAX_InitializeAXRuntime_block_invoke_11, symObjAddr: 0x1808, symBinAddr: 0x9760, symSize: 0x98 }
+  - { offset: 0x90266, size: 0x8, addend: 0x0, symName: ____UnityAX_InitializeAXRuntime_block_invoke_12, symObjAddr: 0x18A0, symBinAddr: 0x97F8, symSize: 0x70 }
+  - { offset: 0x902D0, size: 0x8, addend: 0x0, symName: ____UnityAX_InitializeAXRuntime_block_invoke_13, symObjAddr: 0x1910, symBinAddr: 0x9868, symSize: 0x38 }
+  - { offset: 0x9031A, size: 0x8, addend: 0x0, symName: ____UnityAX_InitializeAXRuntime_block_invoke_14, symObjAddr: 0x1948, symBinAddr: 0x98A0, symSize: 0x48 }
+  - { offset: 0x90375, size: 0x8, addend: 0x0, symName: ____UnityAX_InitializeAXRuntime_block_invoke_15, symObjAddr: 0x1990, symBinAddr: 0x98E8, symSize: 0x38 }
+  - { offset: 0x903BF, size: 0x8, addend: 0x0, symName: ____UnityAX_InitializeAXRuntime_block_invoke_16, symObjAddr: 0x19C8, symBinAddr: 0x9920, symSize: 0x38 }
+  - { offset: 0x90409, size: 0x8, addend: 0x0, symName: ____UnityAX_InitializeAXRuntime_block_invoke_17, symObjAddr: 0x1A00, symBinAddr: 0x9958, symSize: 0x38 }
+  - { offset: 0x90453, size: 0x8, addend: 0x0, symName: ____UnityAX_InitializeAXRuntime_block_invoke_18, symObjAddr: 0x1A38, symBinAddr: 0x9990, symSize: 0x38 }
+  - { offset: 0x90499, size: 0x8, addend: 0x0, symName: ____UnityAX_InitializeAXRuntime_block_invoke_19, symObjAddr: 0x1A70, symBinAddr: 0x99C8, symSize: 0x38 }
+  - { offset: 0x904DF, size: 0x8, addend: 0x0, symName: __UnityAX_PostUnityViewChanged, symObjAddr: 0x1AA8, symBinAddr: 0x9A00, symSize: 0x14 }
+  - { offset: 0x9050C, size: 0x8, addend: 0x0, symName: __UnityAX_RegisterElementWithIdentifier, symObjAddr: 0x1ABC, symBinAddr: 0x9A14, symSize: 0xC4 }
+  - { offset: 0x90557, size: 0x8, addend: 0x0, symName: __UnityAX_UnregisterElementWithIdentifier, symObjAddr: 0x1B80, symBinAddr: 0x9AD8, symSize: 0x68 }
+  - { offset: 0x90580, size: 0x8, addend: 0x0, symName: __UnityAX_RuniOSSideUnitTestWithName, symObjAddr: 0x1BE8, symBinAddr: 0x9B40, symSize: 0x7C }
+  - { offset: 0x905AD, size: 0x8, addend: 0x0, symName: __UnityAX_RuniOSSideUnitTestWithKeyPathExpectingStringResult, symObjAddr: 0x1C64, symBinAddr: 0x9BBC, symSize: 0xD8 }
+  - { offset: 0x90E13, size: 0x8, addend: 0x0, symName: '-[AppleAccessibilityElementData identifier]', symObjAddr: 0x0, symBinAddr: 0x9C94, symSize: 0x8 }
+  - { offset: 0x90E21, size: 0x8, addend: 0x0, symName: '+[AppleAccessibilityRuntime sharedInstance]', symObjAddr: 0x50, symBinAddr: 0x9CE4, symSize: 0x30 }
+  - { offset: 0x90E4B, size: 0x8, addend: 0x0, symName: _sharedInstance.__sharedInstance, symObjAddr: 0xAFB8, symBinAddr: 0x126E0, symSize: 0x0 }
+  - { offset: 0x90E61, size: 0x8, addend: 0x0, symName: _sharedInstance.onceToken, symObjAddr: 0xAFC0, symBinAddr: 0x126E8, symSize: 0x0 }
+  - { offset: 0x91435, size: 0x8, addend: 0x0, symName: '-[AppleAccessibilityElementData identifier]', symObjAddr: 0x0, symBinAddr: 0x9C94, symSize: 0x8 }
+  - { offset: 0x9146C, size: 0x8, addend: 0x0, symName: '-[AppleAccessibilityElementData setIdentifier:]', symObjAddr: 0x8, symBinAddr: 0x9C9C, symSize: 0x8 }
+  - { offset: 0x914AB, size: 0x8, addend: 0x0, symName: '-[AppleAccessibilityElementData parentIdentifier]', symObjAddr: 0x10, symBinAddr: 0x9CA4, symSize: 0x8 }
+  - { offset: 0x914E2, size: 0x8, addend: 0x0, symName: '-[AppleAccessibilityElementData setParentIdentifier:]', symObjAddr: 0x18, symBinAddr: 0x9CAC, symSize: 0x8 }
+  - { offset: 0x91521, size: 0x8, addend: 0x0, symName: '-[AppleAccessibilityElementData .cxx_destruct]', symObjAddr: 0x20, symBinAddr: 0x9CB4, symSize: 0x30 }
+  - { offset: 0x91581, size: 0x8, addend: 0x0, symName: '+[AppleAccessibilityRuntime sharedInstance].cold.1', symObjAddr: 0x12D8, symBinAddr: 0xB500, symSize: 0x14 }
+  - { offset: 0x9159D, size: 0x8, addend: 0x0, symName: '+[AppleAccessibilityRuntime sharedInstance].cold.1', symObjAddr: 0x12D8, symBinAddr: 0xB500, symSize: 0x14 }
+  - { offset: 0x915AF, size: 0x8, addend: 0x0, symName: '___43+[AppleAccessibilityRuntime sharedInstance]_block_invoke', symObjAddr: 0x80, symBinAddr: 0x9D14, symSize: 0x30 }
+  - { offset: 0x915D6, size: 0x8, addend: 0x0, symName: '-[AppleAccessibilityRuntime elements]', symObjAddr: 0xB0, symBinAddr: 0x9D44, symSize: 0x8 }
+  - { offset: 0x9160D, size: 0x8, addend: 0x0, symName: '-[AppleAccessibilityRuntime identifierToElement]', symObjAddr: 0xB8, symBinAddr: 0x9D4C, symSize: 0x8 }
+  - { offset: 0x91644, size: 0x8, addend: 0x0, symName: '-[AppleAccessibilityRuntime init]', symObjAddr: 0xC0, symBinAddr: 0x9D54, symSize: 0x8C }
+  - { offset: 0x9167B, size: 0x8, addend: 0x0, symName: '-[AppleAccessibilityRuntime _accessibilityElementIndexPairForIdentifier:]', symObjAddr: 0x14C, symBinAddr: 0x9DE0, symSize: 0xB8 }
+  - { offset: 0x916E2, size: 0x8, addend: 0x0, symName: '-[AppleAccessibilityRuntime registerAccessibilityElementWithIdentifier:parent:hasParent:]', symObjAddr: 0x204, symBinAddr: 0x9E98, symSize: 0x228 }
+  - { offset: 0x9185A, size: 0x8, addend: 0x0, symName: '-[AppleAccessibilityRuntime unregisterAccessibilityElementWithIdentifier:]', symObjAddr: 0x42C, symBinAddr: 0xA0C0, symSize: 0x70 }
+  - { offset: 0x918AD, size: 0x8, addend: 0x0, symName: '-[AppleAccessibilityRuntime topLevelUnityView]', symObjAddr: 0x49C, symBinAddr: 0xA130, symSize: 0xA0 }
+  - { offset: 0x9191A, size: 0x8, addend: 0x0, symName: '-[AppleAccessibilityRuntime isAccessibilityEnabledForUnityView:]', symObjAddr: 0x53C, symBinAddr: 0xA1D0, symSize: 0x20 }
+  - { offset: 0x9195D, size: 0x8, addend: 0x0, symName: '-[AppleAccessibilityRuntime accessibilityChildrenForUnityView:]', symObjAddr: 0x55C, symBinAddr: 0xA1F0, symSize: 0x1BC }
+  - { offset: 0x91A0B, size: 0x8, addend: 0x0, symName: '-[AppleAccessibilityRuntime unityAccessibilityFrame]', symObjAddr: 0x718, symBinAddr: 0xA3AC, symSize: 0x8 }
+  - { offset: 0x91A42, size: 0x8, addend: 0x0, symName: '-[AppleAccessibilityRuntime setUnityAccessibilityFrame:]', symObjAddr: 0x720, symBinAddr: 0xA3B4, symSize: 0x8 }
+  - { offset: 0x91A81, size: 0x8, addend: 0x0, symName: '-[AppleAccessibilityRuntime unityAccessibilityLabel]', symObjAddr: 0x728, symBinAddr: 0xA3BC, symSize: 0x8 }
+  - { offset: 0x91AB8, size: 0x8, addend: 0x0, symName: '-[AppleAccessibilityRuntime setUnityAccessibilityLabel:]', symObjAddr: 0x730, symBinAddr: 0xA3C4, symSize: 0x8 }
+  - { offset: 0x91AF7, size: 0x8, addend: 0x0, symName: '-[AppleAccessibilityRuntime unityAccessibilityTraits]', symObjAddr: 0x738, symBinAddr: 0xA3CC, symSize: 0x8 }
+  - { offset: 0x91B2E, size: 0x8, addend: 0x0, symName: '-[AppleAccessibilityRuntime setUnityAccessibilityTraits:]', symObjAddr: 0x740, symBinAddr: 0xA3D4, symSize: 0x8 }
+  - { offset: 0x91B6D, size: 0x8, addend: 0x0, symName: '-[AppleAccessibilityRuntime unityIsAccessibilityElement]', symObjAddr: 0x748, symBinAddr: 0xA3DC, symSize: 0x8 }
+  - { offset: 0x91BA4, size: 0x8, addend: 0x0, symName: '-[AppleAccessibilityRuntime setUnityIsAccessibilityElement:]', symObjAddr: 0x750, symBinAddr: 0xA3E4, symSize: 0x8 }
+  - { offset: 0x91BE3, size: 0x8, addend: 0x0, symName: '-[AppleAccessibilityRuntime unityAccessibilityHint]', symObjAddr: 0x758, symBinAddr: 0xA3EC, symSize: 0x8 }
+  - { offset: 0x91C1A, size: 0x8, addend: 0x0, symName: '-[AppleAccessibilityRuntime setUnityAccessibilityHint:]', symObjAddr: 0x760, symBinAddr: 0xA3F4, symSize: 0x8 }
+  - { offset: 0x91C59, size: 0x8, addend: 0x0, symName: '-[AppleAccessibilityRuntime unityAccessibilityValue]', symObjAddr: 0x768, symBinAddr: 0xA3FC, symSize: 0x8 }
+  - { offset: 0x91C90, size: 0x8, addend: 0x0, symName: '-[AppleAccessibilityRuntime setUnityAccessibilityValue:]', symObjAddr: 0x770, symBinAddr: 0xA404, symSize: 0x8 }
+  - { offset: 0x91CCF, size: 0x8, addend: 0x0, symName: '-[AppleAccessibilityRuntime unityAccessibilityIdentifier]', symObjAddr: 0x778, symBinAddr: 0xA40C, symSize: 0x8 }
+  - { offset: 0x91D06, size: 0x8, addend: 0x0, symName: '-[AppleAccessibilityRuntime setUnityAccessibilityIdentifier:]', symObjAddr: 0x780, symBinAddr: 0xA414, symSize: 0x8 }
+  - { offset: 0x91D45, size: 0x8, addend: 0x0, symName: '-[AppleAccessibilityRuntime unityAccessibilityViewIsModal]', symObjAddr: 0x788, symBinAddr: 0xA41C, symSize: 0x8 }
+  - { offset: 0x91D7C, size: 0x8, addend: 0x0, symName: '-[AppleAccessibilityRuntime setUnityAccessibilityViewIsModal:]', symObjAddr: 0x790, symBinAddr: 0xA424, symSize: 0x8 }
+  - { offset: 0x91DBB, size: 0x8, addend: 0x0, symName: '-[AppleAccessibilityRuntime unityAccessibilityActivationPoint]', symObjAddr: 0x798, symBinAddr: 0xA42C, symSize: 0x8 }
+  - { offset: 0x91DF2, size: 0x8, addend: 0x0, symName: '-[AppleAccessibilityRuntime setUnityAccessibilityActivationPoint:]', symObjAddr: 0x7A0, symBinAddr: 0xA434, symSize: 0x8 }
+  - { offset: 0x91E31, size: 0x8, addend: 0x0, symName: '-[AppleAccessibilityRuntime unityAccessibilityScroll]', symObjAddr: 0x7A8, symBinAddr: 0xA43C, symSize: 0x8 }
+  - { offset: 0x91E68, size: 0x8, addend: 0x0, symName: '-[AppleAccessibilityRuntime setUnityAccessibilityScroll:]', symObjAddr: 0x7B0, symBinAddr: 0xA444, symSize: 0x8 }
+  - { offset: 0x91EA7, size: 0x8, addend: 0x0, symName: '-[AppleAccessibilityRuntime unityAccessibilityPerformMagicTap]', symObjAddr: 0x7B8, symBinAddr: 0xA44C, symSize: 0x8 }
+  - { offset: 0x91EDE, size: 0x8, addend: 0x0, symName: '-[AppleAccessibilityRuntime setUnityAccessibilityPerformMagicTap:]', symObjAddr: 0x7C0, symBinAddr: 0xA454, symSize: 0x8 }
+  - { offset: 0x91F1D, size: 0x8, addend: 0x0, symName: '-[AppleAccessibilityRuntime unityAccessibilityPerformEscape]', symObjAddr: 0x7C8, symBinAddr: 0xA45C, symSize: 0x8 }
+  - { offset: 0x91F54, size: 0x8, addend: 0x0, symName: '-[AppleAccessibilityRuntime setUnityAccessibilityPerformEscape:]', symObjAddr: 0x7D0, symBinAddr: 0xA464, symSize: 0x8 }
+  - { offset: 0x91F93, size: 0x8, addend: 0x0, symName: '-[AppleAccessibilityRuntime unityAccessibilityActivate]', symObjAddr: 0x7D8, symBinAddr: 0xA46C, symSize: 0x8 }
+  - { offset: 0x91FCA, size: 0x8, addend: 0x0, symName: '-[AppleAccessibilityRuntime setUnityAccessibilityActivate:]', symObjAddr: 0x7E0, symBinAddr: 0xA474, symSize: 0x8 }
+  - { offset: 0x92009, size: 0x8, addend: 0x0, symName: '-[AppleAccessibilityRuntime unityAccessibilityIncrement]', symObjAddr: 0x7E8, symBinAddr: 0xA47C, symSize: 0x8 }
+  - { offset: 0x92040, size: 0x8, addend: 0x0, symName: '-[AppleAccessibilityRuntime setUnityAccessibilityIncrement:]', symObjAddr: 0x7F0, symBinAddr: 0xA484, symSize: 0x8 }
+  - { offset: 0x9207F, size: 0x8, addend: 0x0, symName: '-[AppleAccessibilityRuntime unityAccessibilityDecrement]', symObjAddr: 0x7F8, symBinAddr: 0xA48C, symSize: 0x8 }
+  - { offset: 0x920B6, size: 0x8, addend: 0x0, symName: '-[AppleAccessibilityRuntime setUnityAccessibilityDecrement:]', symObjAddr: 0x800, symBinAddr: 0xA494, symSize: 0x8 }
+  - { offset: 0x920F5, size: 0x8, addend: 0x0, symName: '-[AppleAccessibilityRuntime unityAccessibilityCustomActionsCount]', symObjAddr: 0x808, symBinAddr: 0xA49C, symSize: 0x8 }
+  - { offset: 0x9212C, size: 0x8, addend: 0x0, symName: '-[AppleAccessibilityRuntime setUnityAccessibilityCustomActionsCount:]', symObjAddr: 0x810, symBinAddr: 0xA4A4, symSize: 0x8 }
+  - { offset: 0x9216B, size: 0x8, addend: 0x0, symName: '-[AppleAccessibilityRuntime unityPerformCustomAction]', symObjAddr: 0x818, symBinAddr: 0xA4AC, symSize: 0x8 }
+  - { offset: 0x921A2, size: 0x8, addend: 0x0, symName: '-[AppleAccessibilityRuntime setUnityPerformCustomAction:]', symObjAddr: 0x820, symBinAddr: 0xA4B4, symSize: 0x8 }
+  - { offset: 0x921E1, size: 0x8, addend: 0x0, symName: '-[AppleAccessibilityRuntime unityCustomActionName]', symObjAddr: 0x828, symBinAddr: 0xA4BC, symSize: 0x8 }
+  - { offset: 0x92218, size: 0x8, addend: 0x0, symName: '-[AppleAccessibilityRuntime setUnityCustomActionName:]', symObjAddr: 0x830, symBinAddr: 0xA4C4, symSize: 0x8 }
+  - { offset: 0x92257, size: 0x8, addend: 0x0, symName: '-[AppleAccessibilityRuntime .cxx_destruct]', symObjAddr: 0x838, symBinAddr: 0xA4CC, symSize: 0x108 }
+  - { offset: 0x9228A, size: 0x8, addend: 0x0, symName: '-[AppleAccessibilityRuntime(Testing) runUnitTestWithName:]', symObjAddr: 0x940, symBinAddr: 0xA5D4, symSize: 0x64 }
+  - { offset: 0x92366, size: 0x8, addend: 0x0, symName: '-[AppleAccessibilityRuntime(Testing) runUnitTestForIdentifier:keyPath:expected:]', symObjAddr: 0x9A4, symBinAddr: 0xA638, symSize: 0x1DC }
+  - { offset: 0x923EC, size: 0x8, addend: 0x0, symName: '-[AppleAccessibilityRuntime(Testing) test_SmokeTestSucceeded]', symObjAddr: 0xB80, symBinAddr: 0xA814, symSize: 0x8 }
+  - { offset: 0x9241F, size: 0x8, addend: 0x0, symName: '-[AppleAccessibilityRuntime(Testing) test_SmokeTestFailed]', symObjAddr: 0xB88, symBinAddr: 0xA81C, symSize: 0x8 }
+  - { offset: 0x92452, size: 0x8, addend: 0x0, symName: '-[AppleAccessibilityRuntime(Testing) _test_elementNamedButtonExists]', symObjAddr: 0xB90, symBinAddr: 0xA824, symSize: 0x150 }
+  - { offset: 0x924A8, size: 0x8, addend: 0x0, symName: '-[AppleAccessibilityRuntime(Testing) _test_anyElementsExist]', symObjAddr: 0xCE0, symBinAddr: 0xA974, symSize: 0x20 }
+  - { offset: 0x924DF, size: 0x8, addend: 0x0, symName: '-[AppleAccessibilityRuntime(Testing) _test_performMagicTapOnButton]', symObjAddr: 0xD00, symBinAddr: 0xA994, symSize: 0x174 }
+  - { offset: 0x92548, size: 0x8, addend: 0x0, symName: '-[AppleAccessibilityRuntime(Testing) _test_performEscapeOnButton]', symObjAddr: 0xE74, symBinAddr: 0xAB08, symSize: 0x174 }
+  - { offset: 0x925B1, size: 0x8, addend: 0x0, symName: '-[AppleAccessibilityRuntime(Testing) _test_AccessibilityIncrementOnButton]', symObjAddr: 0xFE8, symBinAddr: 0xAC7C, symSize: 0x174 }
+  - { offset: 0x92607, size: 0x8, addend: 0x0, symName: '-[AppleAccessibilityRuntime(Testing) _test_AccessibilityDecrementOnButton]', symObjAddr: 0x115C, symBinAddr: 0xADF0, symSize: 0x174 }
+  - { offset: 0x9265D, size: 0x8, addend: 0x0, symName: '-[AppleAccessibilityRuntime(Testing) test_elementWithId:hasAccessibilityLabel:]', symObjAddr: 0x12D0, symBinAddr: 0xAF64, symSize: 0x8 }
+...
