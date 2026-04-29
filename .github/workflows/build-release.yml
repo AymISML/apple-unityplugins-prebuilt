@@ -46,10 +46,10 @@ jobs:
           python3 build.py \
             --plugin-list all \
             --platforms all \
-            --build-config release \
-            --action build pack \
+            --build-config Release \
+            --build-action all \
             --skip-codesign \
-            --output ../Build
+            --output-path ../Build
         # The --skip-codesign flag avoids the interactive prompt.
         # If a future version of build.py renames the flag, check:
         #   python3 build.py --help
