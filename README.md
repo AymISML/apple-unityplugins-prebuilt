@@ -1,11 +1,11 @@
-# Apple Unity Plugins — Prebuilt Packages
+# Apple Unity Plugins - Unofficial Prebuilt Packages
 
 Automatically built and published packages for [apple/unityplugins](https://github.com/apple/unityplugins).
 
 Apple's repo includes a Python build script but does not ship prebuilt binaries. This repo uses GitHub Actions to watch for new upstream releases, build the native libraries on macOS with Xcode, and publish the results in two forms:
 
-- **GitHub Release assets** — `.tgz` tarballs ready for local install
-- **UPM Git branches** — one branch per plugin for direct `git` URL install in Unity
+- **GitHub Release assets** - `.tgz` tarballs ready for local install
+- **UPM Git branches** - one branch per plugin for direct `git` URL install in Unity
 
 ---
 
@@ -24,9 +24,9 @@ Apple's repo includes a Python build script but does not ship prebuilt binaries.
 
 ## Installing in Unity
 
-> **Note:** `Apple.Core` must be installed first — all other plugins depend on it.
+> **Note:** `Apple.Core` must be installed first - all other plugins depend on it.
 
-### Option A — Direct Git URL (UPM)
+### Option A - Direct Git URL (UPM)
 
 No download needed. Unity's Package Manager installs straight from this repo's branches.
 
@@ -47,7 +47,7 @@ To target a specific version, append the release tag after `#`:
 ```
 https://github.com/aymisml/apple-unityplugins-prebuilt.git#upm/Apple.Core@v2.0.0
 ```
-### Option B — Tarball Download
+### Option B - Tarball Download
 
 1. Go to the [Releases](../../releases) page and download the `.tgz` files for the plugins you need.
 2. In Unity: **Window → Package Manager → ＋ → Add package from tarball…**
@@ -113,7 +113,7 @@ The default `GITHUB_TOKEN` is used for all operations. You must grant it write a
 3. Check **Allow GitHub Actions to create and approve pull requests** (optional but useful).
 4. Click **Save**.
 
-No additional secrets are required — `secrets.GITHUB_TOKEN` is provided automatically.
+No additional secrets are required - `secrets.GITHUB_TOKEN` is provided automatically.
 
 ### 3. Update the README URLs
 
@@ -136,7 +136,7 @@ Edit `.github/workflows/check-upstream.yml` and modify the `cron` expression:
 
 ```yaml
 schedule:
-  - cron: "0 */6 * * *"   # every 6 hours — change as needed
+  - cron: "0 */6 * * *"   # every 6 hours - change as needed
 ```
 
 ---
@@ -175,7 +175,7 @@ Re-check step 2 of the setup above. The token needs **write** permission to crea
 
 ## Relationship to apple/unityplugins
 
-This repo contains no original Apple source code. The build workflows clone [apple/unityplugins](https://github.com/apple/unityplugins) at a specific tag, build the native libraries, and publish the resulting compiled artifacts. All intellectual property belongs to Apple. Review Apple's [LICENSE](https://github.com/apple/unityplugins/blob/main/LICENSE.md) before use.
+This repo contains no original Apple source code. The build workflows clone [apple/unityplugins](https://github.com/apple/unityplugins) at a specific tag, build the native libraries, and publish the resulting compiled artifacts. All intellectual property belongs to Apple. Review Apple's [LICENSE](https://github.com/apple/unityplugins/blob/main/LICENSE.txt) before use.
 
 ---
 
