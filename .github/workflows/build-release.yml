@@ -42,14 +42,14 @@ jobs:
       # ── 2. Build ──────────────────────────────────────────────────────────────
       - name: Create Build output directory
         run: mkdir -p Build
-        
+
       - name: Build all plugins (Release, no codesign, no tests)
         working-directory: upstream
         run: |
           python3 build.py \
             --plugin-list all \
             --platforms all \
-            --build-config all \
+            --build-config Release \
             --build-action all \
             --output-path Build \
             --codesign-identity "-" \
