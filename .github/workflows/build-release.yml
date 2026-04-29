@@ -72,12 +72,13 @@ jobs:
       - name: Verify expected tarballs exist
         run: |
           EXPECTED=(
-            "Apple.Core"
-            "Apple.Accessibility"
-            "Apple.CoreHaptics"
-            "Apple.GameController"
-            "Apple.GameKit"
-            "Apple.PHASE"
+            "com.apple.unityplugin.core"
+            "com.apple.unityplugin.accessibility"
+            "com.apple.unityplugin.corehaptics"
+            "com.apple.unityplugin.gamecontroller"
+            "com.apple.unityplugin.gamekit"
+            "com.apple.unityplugin.phase"
+            "com.apple.unityplugin.spatialcontroller"
           )
           MISSING=()
           for pkg in "${EXPECTED[@]}"; do
@@ -135,25 +136,28 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           PLUGINS=(
-            "Apple.Core"
-            "Apple.Accessibility"
-            "Apple.CoreHaptics"
-            "Apple.GameController"
-            "Apple.GameKit"
-            "Apple.PHASE"
+            "com.apple.unityplugin.core:Apple.Core"
+            "com.apple.unityplugin.accessibility:Apple.Accessibility"
+            "com.apple.unityplugin.corehaptics:Apple.CoreHaptics"
+            "com.apple.unityplugin.gamecontroller:Apple.GameController"
+            "com.apple.unityplugin.gamekit:Apple.GameKit"
+            "com.apple.unityplugin.phase:Apple.PHASE"
+            "com.apple.unityplugin.spatialcontroller:Apple.SpatialController"
           )
 
-          for PKG in "${PLUGINS[@]}"; do
+          for ENTRY in "${PLUGINS[@]}"; do
+            PKG="${ENTRY%%:*}"
+            BRANCH_NAME="${ENTRY##*:}"
             TGZ=$(ls upstream/Build/${PKG}-*.tgz 2>/dev/null | head -n 1)
             if [ -z "$TGZ" ]; then
               echo "⚠️  Skipping $PKG – tarball not found."
               continue
             fi
 
-            BRANCH="upm/${PKG}"
+            BRANCH="upm/${BRANCH_NAME}"
             WORK_DIR="upm_work_${PKG}"
 
-            echo "──── Processing $PKG ────"
+            echo "──── Processing $BRANCH_NAME ($PKG) ────"
             echo "Tarball: $TGZ"
 
             # Extract tarball (npm pack produces a 'package/' subdirectory)
@@ -194,5 +198,5 @@ jobs:
             git worktree remove --force "$WORKTREE"
             rm -rf "$WORK_DIR"
 
-            echo "✅  Pushed $BRANCH"
+            echo "✅  Pushed $BRANCH ($PKG)"
           done
