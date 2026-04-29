@@ -43,13 +43,19 @@ jobs:
       - name: Create Build output directory
         run: mkdir -p Build
 
+      - name: Create no-codesign xcconfig
+        run: |
+          cat > /tmp/nosign.xcconfig << 'EOF'
+          CODE_SIGNING_ALLOWED = NO
+          CODE_SIGNING_REQUIRED = NO
+          CODE_SIGN_IDENTITY =
+          DEVELOPMENT_TEAM =
+          EOF
+
       - name: Build all plugins (Release, no codesign, no tests)
         working-directory: upstream
         env:
-          CODE_SIGNING_ALLOWED: "NO"
-          CODE_SIGNING_REQUIRED: "NO"
-          CODE_SIGN_IDENTITY: ""
-          DEVELOPMENT_TEAM: ""
+          XCODE_XCCONFIG_FILE: /tmp/nosign.xcconfig
         run: |
           python3 build.py \
             --plugin-list all \
