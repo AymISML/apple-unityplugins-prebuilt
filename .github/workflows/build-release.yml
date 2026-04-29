@@ -40,15 +40,21 @@ jobs:
           xcode-version: latest-stable
 
       # ── 2. Build ──────────────────────────────────────────────────────────────
+      - name: Create Build output directory
+        run: mkdir -p Build
+        
       - name: Build all plugins (Release, no codesign, no tests)
         working-directory: upstream
         run: |
           python3 build.py \
             --plugin-list all \
-            --platforms iPhoneSimulator iOS macOS \
-            --build-config Release \
+            --platforms all \
+            --build-config all \
             --build-action all \
-            --output-path ../Build
+            --output-path Build \
+            --codesign-identity "-" \
+            -k all -f
+
 
       - name: List build output
         run: ls -lh Build/ || echo "Build directory not found - check build step logs."
